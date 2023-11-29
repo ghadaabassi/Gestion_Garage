@@ -21,13 +21,13 @@ namespace Garage
         private void button2_Click(object sender, EventArgs e)
         {
             Voiture v = new Voiture(0, null, null, null, null);
+            Moto m = new Moto(0,null,0,0);
             if (radioButton1.Checked)
             {
                 AddVoiture addVoitureForm = new AddVoiture(v);
 
                 if (addVoitureForm.ShowDialog() == DialogResult.OK)
                 {
-
                     v = addVoitureForm.v;
 
                     g.AddAuto(v);
@@ -43,17 +43,44 @@ namespace Garage
             }
             else
             {
+                AddMoto addMotoForm = new AddMoto(m);
 
+                if (addMotoForm.ShowDialog() == DialogResult.OK)
+                {
+                    m = addMotoForm.m;
+
+                    g.AddAuto(m);
+
+                    listView1.Items.Clear();
+
+                    foreach (Moto moto in g.afficherAuTomobile(SubType.Moto))
+                    {
+                        listView1.Items.Add(moto.Immatriculation.ToString());
+                    }
+                }
             }
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             foreach (ListViewItem selectedItem in listView1.SelectedItems)
             {
-                MessageBox.Show(selectedItem.Text);
+                Automobile at = g.getAuto(selectedItem.Text);
+
+                
+                if (at is Voiture voiture)
+                {
+                    MessageBox.Show("Immatriculation : " + selectedItem.Text + "\nMarque :"+
+                        voiture.Marque+"\n "
+                        );
+                }
+                if (at is Moto moto)
+                {
+                    MessageBox.Show("Immatriculation : " + selectedItem.Text + "\nCylindre :" +
+                        moto.Cylindre + "\n "
+                        );
+                }
+
             }
         }
 
@@ -112,8 +139,7 @@ namespace Garage
         {
             foreach (ListViewItem selectedItem in listView1.SelectedItems)
             {
-
-                Automobile at = (Voiture)g.getAuto(selectedItem.Text);
+                Automobile at = g.getAuto(selectedItem.Text);
 
                 label2.Text = "Immatriculation : " + at.Immatriculation;
                 label3.Text = "Annee : " + at.Annee.ToString();

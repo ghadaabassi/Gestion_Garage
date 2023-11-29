@@ -49,6 +49,7 @@
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(588, 57);
             textBox5.TabIndex = 21;
+            textBox5.TextChanged += textBox5_TextChanged;
             // 
             // label5
             // 
@@ -67,6 +68,7 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(588, 57);
             textBox4.TabIndex = 19;
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // label4
             // 
@@ -95,6 +97,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(588, 57);
             textBox2.TabIndex = 15;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // label2
             // 
@@ -112,6 +115,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(588, 57);
             textBox1.TabIndex = 13;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label1
             // 
