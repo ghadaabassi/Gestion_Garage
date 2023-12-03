@@ -9,3 +9,14 @@ C:\Users\Ghada\Documents\Ing2_S1\Dotnet\TP\Garage\BLL\obj\Debug\net6.0\BLL.dll
 C:\Users\Ghada\Documents\Ing2_S1\Dotnet\TP\Garage\BLL\obj\Debug\net6.0\refint\BLL.dll
 C:\Users\Ghada\Documents\Ing2_S1\Dotnet\TP\Garage\BLL\obj\Debug\net6.0\BLL.pdb
 C:\Users\Ghada\Documents\Ing2_S1\Dotnet\TP\Garage\BLL\obj\Debug\net6.0\ref\BLL.dll
+C:\Users\Ghada\Documents\projects\Github\Gestion_Garage\Garage\BLL\bin\Debug\net6.0\BLL.deps.json
+C:\Users\Ghada\Documents\projects\Github\Gestion_Garage\Garage\BLL\bin\Debug\net6.0\BLL.dll
+C:\Users\Ghada\Documents\projects\Github\Gestion_Garage\Garage\BLL\bin\Debug\net6.0\BLL.pdb
+C:\Users\Ghada\Documents\projects\Github\Gestion_Garage\Garage\BLL\obj\Debug\net6.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ghada\Documents\projects\Github\Gestion_Garage\Garage\BLL\obj\Debug\net6.0\BLL.AssemblyInfoInputs.cache
+C:\Users\Ghada\Documents\projects\Github\Gestion_Garage\Garage\BLL\obj\Debug\net6.0\BLL.AssemblyInfo.cs
+C:\Users\Ghada\Documents\projects\Github\Gestion_Garage\Garage\BLL\obj\Debug\net6.0\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Ghada\Documents\projects\Github\Gestion_Garage\Garage\BLL\obj\Debug\net6.0\BLL.dll
+C:\Users\Ghada\Documents\projects\Github\Gestion_Garage\Garage\BLL\obj\Debug\net6.0\refint\BLL.dll
+C:\Users\Ghada\Documents\projects\Github\Gestion_Garage\Garage\BLL\obj\Debug\net6.0\BLL.pdb
+C:\Users\Ghada\Documents\projects\Github\Gestion_Garage\Garage\BLL\obj\Debug\net6.0\ref\BLL.dll

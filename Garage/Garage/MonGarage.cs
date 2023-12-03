@@ -86,13 +86,12 @@ namespace Garage
 
         private void button3_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Are you sure you want to delete this item?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
                 foreach (ListViewItem selectedItem in listView1.SelectedItems)
                 {
                     listView1.Items.Remove(selectedItem);
+                    DialogResult result = MessageBox.Show("Are you sure you want to delete this item?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
                     g.deleteAuto(selectedItem.Text);
                 }
             }
