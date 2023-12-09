@@ -88,10 +88,11 @@ namespace Garage
         {
                 foreach (ListViewItem selectedItem in listView1.SelectedItems)
                 {
-                    listView1.Items.Remove(selectedItem);
+                   
                     DialogResult result = MessageBox.Show("Are you sure you want to delete this item?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
+                    listView1.Items.Remove(selectedItem);
                     g.deleteAuto(selectedItem.Text);
                 }
             }
